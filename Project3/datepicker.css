@@ -1,0 +1,153 @@
+
+*{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+#date h1{
+  text-align: center;
+ color: black;
+}
+
+body{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: url("/cover1.jpg") 
+  no-repeat center center/cover;
+  min-width: 375px;
+  height: 100%;
+  
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 323px;
+  min-width: 280px;
+  border-radius: 4%;
+  position: relative;
+  text-align: center;
+  background: #DCDCDC;
+  opacity: 0.9;
+
+}
+
+.headerBar {
+  height: 3rem;
+  width: inherit;
+  background-color:  #20B2AA;
+  border-radius: 3px 3px 0px 0px;
+
+}
+
+.monthButtom {
+  width: 40px;
+  height: 40px;
+  float:left;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 22px;
+  text-align: center;
+  line-height: 40px;
+}
+.monthButtom:hover {
+  cursor: pointer;
+  color: #FAFAD2;
+  text-shadow: 0px 0px 1px #dddddd;
+}
+
+.monthYearBar {
+  height: 40px;
+  width: 200px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  text-align: center;
+  line-height: 40px;
+  float:left;
+  cursor: pointer;
+}
+
+.weekdayBar {
+  height: 40px;
+  width: 280px;
+  background-color: #FAFAD2 ;
+  display: inline-block;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+
+}
+
+.weekdayNames {
+  width: 40px;
+  height:40px;
+  display:inline-block;
+  font-size: 18px;
+  font-family: sans-serif;
+  line-height: 40px;
+  text-align: center;
+  cursor: pointer;
+
+}
+
+.paddingBar {
+  width:280px;
+  height:3px;
+}
+
+.weekdaysContainer {
+  width: inherit;
+  height: 240px;
+ 
+}
+
+.weekRow {
+  width: inherit;
+  height: 40px;
+  margin: 0px;
+  display: float;
+
+}
+
+.oneDay {
+  width: 34px;
+  height: 34px;
+  margin: 3px;
+  font-size: 16px;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 34px;
+  text-align: center;
+  text-shadow: 0px 0px 1px #bbbbbb;
+  
+}
+
+
+.daysInAMonth {
+  color: #111111;
+  border-radius: 8px;
+}
+
+.daysInAMonth:hover {
+  cursor: pointer;
+  background-color: #20B2AA;
+  box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.2), 0 3px 8px 0 rgba(0, 0, 0, 0.19);
+
+}
+
+.daysInAMonth.selected{
+  background: #20B2AA;
+  color: #ffffff;
+}
+
+.daysInAMonth.selected:hover {
+  color: #ffffff;
+  cursor: pointer;
+  pointer-events: painted;
+
+}
+
+.daysNotInAMonth {
+  
+  color: #999999;
+  cursor: pointer;
+  
+}
